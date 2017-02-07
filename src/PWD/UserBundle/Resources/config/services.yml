@@ -1,0 +1,4 @@
+services:
+#    pwd_user.example:
+#        class: PWD\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

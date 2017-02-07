@@ -1,0 +1,30 @@
+{# empty Twig template #}
+{# empty Twig template #}
+{% extends "PWDUserBundle::layout.html.twig" %}
+{% block title %}
+    Login - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        <div class="row">
+            <div class="col-sm-6 wowload fadeInLeft">
+                <h4>Créer un compte</h4>
+                {{form(createForm)}}
+            </div>
+            <div class="col-sm-6 wowload fadeInLeft">
+                <h4>Se connecter</h4>
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.message }}</div>
+                {% endif %}
+                <form action="{{ path('fos_user_security_check') }}" method="post">
+                    <input type="text" name="_username" placeholder="Votre nom d'utilisateur..."/>
+                    <input type="password" name="_password" placeholder="Votre mot de passe..."/>
+                    <input type="submit" name="_submit" class="btn btn-primary slibidur" value="Connexion" /><input type="reset" class="btn btn-reset slibidur slibidur-cendre" value="Effacer" />
+                </form>
+            </div>
+        </div>
+        <br/>
+    </div>
+{% endblock %}

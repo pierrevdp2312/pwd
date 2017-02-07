@@ -1,0 +1,19 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+<div class="marge"></div>
+<div class="container spacer about">
+    <h4>Utilisateurs</h4>
+	<table>
+		<tr><th>Nom</th><th>Adresse mail</th><th>Supprimer</th></tr>
+                {% for user in users %}
+                    <tr><td>{{user.username}}</td><td>{{user.email}}</td><td><a href="{{path('pwd_anime_deleteUser',{'id':user.id})}}"><input class="btn btn-reset" type="submit" value="Retirer"/></a></td></tr>
+                {% endfor %}
+	</table>
+</div>
+<div class="marge"></div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{# app/Resources/views/layout.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>{% block title %}Super Anime{% endblock %}</title>
+        <!-- Google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{{asset("css/bootstrap/css/bootstrap.min.css")}}" />
+        <!-- animate.css -->
+        <link rel="stylesheet" href="{{asset("css/animate/animate.css")}}" />
+        <link rel="stylesheet" href="{{asset("css/animate/set.css")}}" />
+        <!-- favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- stylesheet-->
+        <link rel="stylesheet" href="{{asset("css/style.css")}}">
+    </head>
+    <body>
+        <div class="topbar animated fadeInLeftBig" style="background:url({{asset("image/lines.png")}});"></div>
+
+
+        {% block content %}
+            
+        {% endblock %}
+        <!-- Footer Starts -->
+        <div class="footer text-center spacer">
+            Super Anime &copy; - 2016-2017 - Pierre Van de putte
+        </div>
+        <!-- # Footer Ends -->
+    </body>
+</html>

@@ -1,0 +1,45 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        <div class="col-sm-6 wowload fadeInLeft">
+            <img class="imgFiche" src="{{asset(anime.image.webPath)}}" width="235" alt="{{anime.image.alt}}"/>
+        </div>
+        <div class="col-sm-6 wowload fadeInRight">
+            <p><strong>Titre : </strong>{{anime.title}}</p>
+            <p><strong>Genre : </strong>{{anime.genre}}</p>
+            <p><strong>Année de production : </strong>{{anime.year}}</p>
+            <p><strong>Statut : </strong>{{anime.statut}}</p>
+            <p><strong>Nombre d'épisode : </strong>{{anime.episode}}</p>
+            <p><strong>Bande annonce : </strong><a href="{{anime.trailer}}">Voir ici !</a>
+            <div>
+                <a href="{{path("pwd_anime_addWish",{'id':anime.id})}}"><input class="btn btn-primary slibidur" type="submit" value="Wishlist"/></a>
+                <a href="{{path("pwd_anime_addView",{'id':anime.id})}}"><input class="btn btn-primary slibidur slibidur-cendre" type="reset" value="Vue"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="marge"></div>
+    <div class="container about">
+        <p><strong>Résumé : </strong>{{anime.resume}}</p>
+    </div>
+    <div class="container about">
+        <p><strong>Commentaire : </strong></p>
+        {%   if is_granted("IS_AUTHENTICATED_REMEMBERED")   %}
+            {{form(form)}}
+        {% endif %}
+        <div style="clear:both;"></div>
+        {% for com in coms %}
+            <p><strong>{{com.user.username}} : </strong>{{com.text}}
+                {% if is_granted('ROLE_SUPER_ADMIN') %}
+                    <a class="right" href="{{ path("pwd_anime_deleteCom",{'id':com.anime.id})}}"><input type="submit" value="X"/></a>
+                    {% endif %}
+            </p>
+        {% endfor %}
+    </div>
+    <div class="marge"></div>
+{% endblock %}

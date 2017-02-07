@@ -1,0 +1,86 @@
+body {	color:#666;	font:300 15px/15px Roboto,Arial,Helvetica;background-color:#fff;-webkit-font-smoothing:antialiased;}
+
+a{color:#00a9c6; text-decoration:none;}
+a:hover{color:#9c9c9c;text-decoration:none;}
+.btn,a,.btn:hover,a:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+.figPara{font-weight:bold;font-size:18px !important;}
+
+h1,h2,h3,h4{margin: 0;line-height: 1em;}
+h1{font:700 5em Roboto,Arial,Helvetica;margin:0.25em 0;text-transform: uppercase;}
+h2{font:14 2.5em Roboto,Arial,Helvetica;margin-bottom: -1.5em;}
+h3{font:300 2em Roboto,Arial,Helvetica;margin:2em 0 1em 0;}
+h4{font:300 1.5em Roboto,Arial,Helvetica;margin-bottom: 1em;}
+h4 i{margin-right: 0.5em;}
+
+table,caption,th,tr,td{border:solid 3px #9c9c9c;}
+table{margin:auto;width:100%;}
+caption,th,tr,td{padding:10px;text-align:center;}
+
+p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
+div.marge{margin:100px 0;}
+
+.spacer{padding: 6em 0;}
+.imgFiche{display:block;margin:auto;}
+
+.btn{border:none;border-radius: 0;padding: 1em 4em;background: rgba(0,0,0,0.5);text-transform: uppercase;}
+.btn:hover,.btn:active{color: #fff;}
+.btn-default{color: #ccc;border: 1px solid #aaa;}
+.btn-default:hover,.btn-default:active{background: rgba(0,0,0,0.8);}
+.btn-primary{color: #fff;background:#00a9c6;width: 100%;outline: none;}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus{background:#1BC0DC;box-shadow: none;}
+.btn-reset{color: #fff;background:rgb(255,26,31);width: 100%;outline: none;}
+.btn-reset:hover{background:rgb(255,73,78);box-shadow: none;}
+.slibidur{width:48% !important;display:block;float:left;}
+.slibidur-cendre{margin-left:10px;float:right;}
+
+.search-input{display:inline !important;}
+.topbar {height:5px;position: fixed;top: 0;width: 100%;z-index: 1000;}
+.navbar-nav > li > a{font-size: 1em;line-height: 3.6em;}
+.navbar-nav > li > a:hover{color:#21abca !important;}
+.navbar-nav > li > ul{display:none;}
+.soucisse{position:static;}
+.soucisse:hover ul{display:block;position:absolute;background:#f8f8f8;width:150px;padding-left:15px;border:solid #e7e7e7 1px;}
+.navbar-nav > li > ul > li{list-style:none;}
+.navbar-nav > li > ul > li > a{font-size: 1em;line-height: 3.6em;color:#666;}
+.navbar-nav > li > ul > li > a:hover{color:#21abca !important;}
+.navbar-fixed-top{top: 5px;}
+.navbar-inverse{background: #111;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{background: none;color: #21abca;}
+.search{margin-top:15px;}
+.search > .search-bar {width:100px;}
+.search > .search-button {height:25px;}
+#head,.carousel{margin-top: 0;}
+
+#home{padding-top: 6em;}
+.carousel-caption{top:0;bottom: 0;left: 0; right: 0;padding: 0;}
+.caption-wrapper{display: table;height: 100%;width: 100%;}
+.caption-info{display: table-cell;vertical-align: middle;}
+.caption-info p{font-size: 1.25em;}
+.caption-info .btn i{margin-right:0.75em;}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{width: 100%;}
+.carousel-control{z-index:1000;}
+
+/*about*/
+.about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
+.process ul li{width: 10em;height: 10em;border: 1px solid #CEEBF0;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #21ABCA;}
+.process ul li span{line-height: 2em;display: inline-block;font-weight: 300;}
+.process ul li span i{font-size: 3em;}
+.process ul li span b{display: block;font-size: 1em;font-weight: 300;}
+
+/*works*/
+#works{padding-top:6em;width:1050px;}
+#works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
+#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+/*works*/
+/*contact*/
+form textarea,form input,form select{width: 100%;padding:1em;border:1px solid #ccc;margin-bottom: 1em;border-radius: 0;outline: none;}
+/*contact*/
+.footer{background-color: #111; color: #fff; font-size: 1em;color: #aaa;}
+.footer a{color: #aaa;margin: 0 1em; }

@@ -1,0 +1,35 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        <h4>Wishlist</h4>
+        <table>
+            <tr><th>Nom</th><th>Genre</th><th>Année</th><th>Liens</th><th>Retirer</th></tr>
+            {% for wish in wishlist %}
+                <tr><td>{{wish.anime.title}}</td><td>{{wish.anime.genre}}</td><td>{{wish.anime.year}}</td><td><a href="{{path("pwd_anime_fiche",{'id':wish.anime.id})}}"><input class="btn btn-primary" type="submit" value="Acceder"/></a></td><td><a href="{{path("pwd_anime_deleteWish",{"id":wish.id})}}"><input class="btn btn-reset" type="reset" value="Retirer"/></a></td></tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="container spacer about">
+        <h4>Vues</h4>
+        <table>
+            <tr><th>Nom</th><th>Genre</th><th>Année</th><th>Liens</th><th>Retirer</th></tr>
+            {% for view in views %}
+                <tr><td>{{view.anime.title}}</td><td>{{view.anime.genre}}</td><td>{{view.anime.year}}</td><td><a href="{{path("pwd_anime_fiche",{'id':view.anime.id})}}"><input class="btn btn-primary" type="submit" value="Acceder"/></a></td><td><a href="{{path("pwd_anime_deleteView",{"id":view.id})}}"><input class="btn btn-reset" type="reset" value="Retirer"/></a></td></tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="container spacer about">
+        <div class="row">
+            <div class="col-sm-6 wowload fadeInLeft">
+                <h4>Modifier mot de passe...</h4>
+                {{form(form)}}
+            </div>
+        </div>
+    </div>
+{% endblock %}

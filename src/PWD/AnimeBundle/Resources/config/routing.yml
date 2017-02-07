@@ -1,0 +1,70 @@
+pwd_anime_index:
+    path:     /
+    defaults: { _controller: PWDAnimeBundle:Anime:index }
+pwd_anime_adminUser:
+    path:     /admin/user
+    defaults: { _controller: PWDAnimeBundle:Anime:adminUser }
+pwd_anime_adminAnime:
+    path:     /admin/anime
+    defaults: { _controller: PWDAnimeBundle:Anime:adminAnime }
+pwd_anime_contact:
+    path:     /contact
+    defaults: { _controller: PWDAnimeBundle:Anime:contact }
+pwd_anime_fiche:
+    path:     /fiche/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:fiche }
+    requirements:
+        id: \d+
+pwd_anime_search:
+    path:     /search/{page}
+    defaults: 
+        _controller: PWDAnimeBundle:Anime:search
+        page: 1
+pwd_anime_modif:
+    path:     /admin/modif/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:modif }
+    requirements:
+        id: \d+
+pwd_anime_delete:
+    path:     /admin/delete/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:delete }
+    requirements:
+        id: \d+
+pwd_anime_deleteCom:
+    path:     /admin/deleteCom/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:deleteCom }
+    requirements:
+        id: \d+
+pwd_anime_deleteUser:
+    path:     /admin/deleteUser/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:deleteUser }
+    requirements:
+        id: \d+
+pwd_anime_add:
+    path:     /admin/add
+    defaults: { _controller: PWDAnimeBundle:Anime:add }
+    requirements:
+        id: \d+
+pwd_anime_user:
+    path:     /user
+    defaults: { _controller: PWDAnimeBundle:Anime:user }
+pwd_anime_addWish:
+    path:     /addWish/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:addWish }
+    requirements:
+        id: \d+
+pwd_anime_addView:
+    path:     /addView/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:addView }
+    requirements:
+        id: \d+
+pwd_anime_deleteWish:
+    path:     /deleteWish/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:deleteWish }
+    requirements:
+        id: \d+
+pwd_anime_deleteView:
+    path:     /deleteView/{id}
+    defaults: { _controller: PWDAnimeBundle:Anime:deleteView }
+    requirements:
+        id: \d+

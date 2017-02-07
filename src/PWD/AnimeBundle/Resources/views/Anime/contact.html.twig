@@ -1,0 +1,19 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Contact - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        <div class="row">
+            <div class="col-sm-6 wowload fadeInLeft">
+                <h4>Informations générales</h4>
+                <p><strong>Téléphone : </strong>0479.12.34.56</p>
+                <p><strong>Email générale : </strong>slibidur@gmail.com</p>
+                <p><strong>Adresse : </strong>Rue du Slibidur Cendré n°23,4000 Liège</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

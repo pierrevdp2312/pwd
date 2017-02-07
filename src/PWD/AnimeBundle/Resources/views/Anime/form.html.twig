@@ -1,0 +1,13 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        {{form(form)}}
+    </div>
+    <div class="marge"></div>
+{% endblock %}

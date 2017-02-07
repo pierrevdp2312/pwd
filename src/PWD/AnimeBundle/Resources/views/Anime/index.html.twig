@@ -1,0 +1,34 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+    <div class="marge"></div>
+    <div class="container spacer about">
+        <div class="row">
+            <div class="col-sm-6 wowload fadeInLeft">
+                <h4>Bonjour !</h4>
+                <p>Bienvenue sur Super Anime un site recensant bon nombres d'animés et mettant a disposition leurs fiches technique aux utilisateurs pour leur permettrent de les placer dans leur liste de souhaits ou de noter leur animés préférés et/ou poster un commentaire a leurs propos !</p>
+            </div>
+            <div class="col-sm-6 wowload fadeInRight">
+                <h4>Entrez dans la grande famille Super Anime !</h4>
+                <p>Vous devez etre connecté avec un compte utilisateur pour pouvoir avoir accès a toutes les fonctionnalités du site (wishlist,liste préférences,gestion commentaires,...).Donc n'hesitez pas a créer un compte ! C'est entièrement gratuit !</p>    
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center wowload fadeInUp">Derniers ajouts</h2>  
+    <!-- works -->
+    <div id="works"  class=" clearfix grid spacer">
+        {% for anime in animes %}
+        <figure class="effect-oscar  wowload ">
+            <img src="{{asset(anime.imgMin.webPath)}}" alt="{{anime.imgMin.alt}}"/>
+            <figcaption>
+                <p class="figPara">{{anime.title}}</p>
+                <p><a href="{{path('pwd_anime_fiche',{'id':anime.id})}}" title="{{anime.id}}" data-gallery>Voir</a></p>            
+            </figcaption>
+        </figure>
+        {% endfor %}
+    </div>
+{% endblock %}

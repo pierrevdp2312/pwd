@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/vendor/friendsofsymfony/user-bundle/composer.json</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Resources/views/Anime/menu.html.twig</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/app/AppKernel.php</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/web/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Resources/views/Anime/index.html.twig</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Resources/views/Anime/search.html.twig</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/app/config/routing_dev.yml</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/app/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/vendor/coresphere/console-bundle/CoreSphereConsoleBundle.php</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Controller/AnimeController.php</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/vendor/friendsofsymfony/user-bundle/Form/Type/ChangePasswordFormType.php</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Form/AnimeType.php</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/src/PWD/AnimeBundle/Resources/views/Anime/Contact.html.twig</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/bin/console</file>
+            <file>file:/C:/xampp/htdocs/projetWebDynamique/app/config/config_dev.yml</file>
+        </group>
+    </open-files>
+</project-private>

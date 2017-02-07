@@ -1,0 +1,23 @@
+{# empty Twig template #}
+{% extends "PWDAnimeBundle::layout.html.twig" %}
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+{% block section %}
+    {% include 'PWDAnimeBundle:Anime:menu.html.twig' %}
+<div class="marge"></div>
+<div class="container spacer about">
+    <h4>Animes</h4>
+	<table>
+		<tr><th>Nom</th><th>Liens</th><th>Modifier</th><th>Supprimer</th></tr>
+                {% for anime in animes %}
+                    <tr><td>{{anime.title}}</td><td><a href="{{path('pwd_anime_fiche',{'id':anime.id})}}"><input class="btn btn-primary" type="submit" value="Acceder"/></a></td><td><a href="{{path('pwd_anime_modif',{'id':anime.id})}}"><input class="btn btn-primary" type="submit" value="Modifier"/></a></td><td><a href="{{path('pwd_anime_delete',{'id':anime.id})}}"><input class="btn btn-reset" type="reset" value="Supprimer"/></form></a></td></tr>
+		{% endfor %}
+	</table>
+        <div style="width:250px;">
+            <a href="{{path('pwd_anime_add')}}"><input class="btn btn-primary" type="submit" value="Ajouter un anime"/></a>
+        </div>
+</div>
+<div class="marge"></div>
+{% endblock %}
+{#swift - Webissimus - double effect - koalaboox#}
